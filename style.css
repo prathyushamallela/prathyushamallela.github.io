@@ -3,14 +3,15 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #50C878, #2E8B57);
   color: #fff;
   text-align: center;
-  background-image: url('https://www.transparenttextures.com/patterns/transparent-square-tiles.png');
+  background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the actual file name */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
-/*background-color: #194213;*/
-/*background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 /* Header */
 header {
   background: rgba(0, 0, 0, 0.7);
