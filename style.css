@@ -6,7 +6,7 @@ body {
   background: linear-gradient(to right, #50C878, #2E8B57);
   color: #fff;
   text-align: center;
-  background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the actual file name */
+  background-image: url('green_background.jpg'); /* Replace 'your-image.jpg' with the actual file name */
   background-size: cover; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-attachment: fixed; /* Keeps the background fixed during scrolling */
