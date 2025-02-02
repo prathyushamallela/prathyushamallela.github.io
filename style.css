@@ -6,6 +6,7 @@ body {
   background: linear-gradient(to right, #004d40, #00796b);
   color: #e0f2f1;
   text-align: center;
+  background-color: #392994
   background-image: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png');
   background-blend-mode: overlay;
 }
