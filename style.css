@@ -3,17 +3,16 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #004d40, #00796b);
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
   color: #e0f2f1;
   text-align: center;
-  background-color: #392994
   background-image: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png');
   background-blend-mode: overlay;
 }
 
 /* Header */
 header {
-  background: rgba(0, 77, 64, 0.8);
+  background: rgba(30, 60, 114, 0.9);
   padding: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -21,7 +20,7 @@ header {
 h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #80cbc4;
+  color: #a1c4fd;
 }
 
 /* Sections */
@@ -30,14 +29,14 @@ section {
   max-width: 900px;
   padding: 25px;
   border-radius: 12px;
-  background: rgba(0, 51, 43, 0.85);
+  background: rgba(42, 82, 152, 0.85);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  color: #4db6ac;
+  color: #6dd5ed;
   font-size: 2em;
-  border-bottom: 3px solid #4db6ac;
+  border-bottom: 3px solid #6dd5ed;
   padding-bottom: 10px;
 }
 
@@ -54,7 +53,7 @@ li {
 }
 
 li:hover {
-  color: #80cbc4;
+  color: #a1c4fd;
 }
 
 /* Projects */
@@ -71,7 +70,7 @@ li:hover {
 }
 
 .project a {
-  color: #4db6ac;
+  color: #6dd5ed;
   font-size: 1.3em;
   text-decoration: none;
   font-weight: bold;
@@ -83,7 +82,7 @@ li:hover {
 
 /* Footer */
 footer {
-  background: rgba(0, 77, 64, 0.8);
+  background: rgba(30, 60, 114, 0.9);
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -91,7 +90,7 @@ footer {
 }
 
 footer a {
-  color: #80cbc4;
+  color: #a1c4fd;
   text-decoration: none;
   font-weight: bold;
 }
@@ -99,18 +98,19 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 #article {
   margin: 50px auto;
   max-width: 800px;
   padding: 20px;
   border-radius: 10px;
-  background: rgba(0, 51, 43, 0.85);
+  background: rgba(42, 82, 152, 0.85);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
 #article a {
-  color: #4db6ac;
+  color: #6dd5ed;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
@@ -118,7 +118,7 @@ footer a:hover {
 
 #article a:hover {
   text-decoration: underline;
-  color: #80cbc4;
+  color: #a1c4fd;
 }
 
 /* Responsive Design */
