@@ -99,6 +99,27 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+#article {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 51, 43, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#article a {
+  color: #4db6ac;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#article a:hover {
+  text-decoration: underline;
+  color: #80cbc4;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
