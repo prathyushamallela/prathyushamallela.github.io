@@ -1,18 +1,18 @@
-/* Professional Portfolio Look */
+/* Professional Portfolio Look /
 body {
 font-family: 'Arial', sans-serif;
 margin: 0;
 padding: 0;
-background: linear-gradient(to right, #ADD8E6, #FFFFFF);
-color: #000;
+background: #87CEEB; / Sky Blue /
+color: #000; / Black Text */
 text-align: center;
 }
 
-/* Header */
+/* Header /
 header {
-background: #87CEEB;
+background: #4682B4;
 padding: 50px 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6); / Neon Yellow Highlight */
 text-transform: uppercase;
 letter-spacing: 2px;
 }
@@ -20,7 +20,7 @@ letter-spacing: 2px;
 h1 {
 font-size: 3em;
 margin-bottom: 10px;
-color: #000;
+color: #FFFF00; /* Neon Yellow */
 font-weight: bold;
 }
 
@@ -31,13 +31,13 @@ max-width: 1000px;
 padding: 30px;
 border-radius: 10px;
 background: #FFFFFF;
-box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6);
 }
 
 h2 {
-color: #00008B;
+color: #FFFF00; /* Neon Yellow */
 font-size: 2.2em;
-border-bottom: 3px solid #00008B;
+border-bottom: 3px solid #FFFF00;
 padding-bottom: 15px;
 text-transform: uppercase;
 }
@@ -47,9 +47,9 @@ nav {
 display: flex;
 justify-content: center;
 gap: 20px;
-background: #87CEEB;
+background: #4682B4;
 padding: 15px 0;
-box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6);
 }
 
 nav a {
@@ -60,7 +60,7 @@ transition: 0.3s;
 }
 
 nav a:hover {
-color: #00008B;
+color: #FFFF00;
 text-decoration: underline;
 }
 
@@ -75,11 +75,11 @@ li {
 font-size: 1.2em;
 padding: 10px;
 transition: 0.3s;
-border-bottom: 1px solid #00008B;
+border-bottom: 1px solid #FFFF00;
 }
 
 li:hover {
-color: #00008B;
+color: #FFFF00;
 }
 
 /* Projects */
@@ -93,11 +93,11 @@ text-align: left;
 }
 
 .project:hover {
-background: rgba(173, 216, 230, 0.5);
+background: rgba(255, 255, 0, 0.5);
 }
 
 .project a {
-color: #00008B;
+color: #FFFF00;
 font-size: 1.5em;
 font-weight: bold;
 text-decoration: none;
@@ -109,7 +109,7 @@ text-decoration: underline;
 
 /* Footer */
 footer {
-background: #87CEEB;
+background: #4682B4;
 padding: 20px;
 position: relative;
 bottom: 0;
@@ -118,7 +118,7 @@ font-size: 1.1em;
 }
 
 footer a {
-color: #00008B;
+color: #FFFF00;
 text-decoration: none;
 font-weight: bold;
 }
