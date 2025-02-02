@@ -1,129 +1,100 @@
-/* Professional Portfolio Look /
+/* General Styles */
 body {
-font-family: 'Arial', sans-serif;
-margin: 0;
-padding: 0;
-background: #87CEEB; / Sky Blue /
-color: #000; / Black Text */
-text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  text-align: center;
+  background-image: url('https://www.transparenttextures.com/patterns/transparent-square-tiles.png');
 }
-
-/* Header /
+/*background-color: #194213;*/
+/*background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* Header */
 header {
-background: #4682B4;
-padding: 50px 20px;
-box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6); / Neon Yellow Highlight */
-text-transform: uppercase;
-letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-font-size: 3em;
-margin-bottom: 10px;
-color: #FFFF00; /* Neon Yellow */
-font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #d4a5ff;
 }
 
 /* Sections */
 section {
-margin: 50px auto;
-max-width: 1000px;
-padding: 30px;
-border-radius: 10px;
-background: #FFFFFF;
-box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6);
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-color: #FFFF00; /* Neon Yellow */
-font-size: 2.2em;
-border-bottom: 3px solid #FFFF00;
-padding-bottom: 15px;
-text-transform: uppercase;
-}
-
-/* Navigation */
-nav {
-display: flex;
-justify-content: center;
-gap: 20px;
-background: #4682B4;
-padding: 15px 0;
-box-shadow: 0 4px 8px rgba(255, 255, 0, 0.6);
-}
-
-nav a {
-color: #000;
-text-decoration: none;
-font-size: 1.2em;
-transition: 0.3s;
-}
-
-nav a:hover {
-color: #FFFF00;
-text-decoration: underline;
+  color: #d4a5ff;
+  font-size: 2em;
+  border-bottom: 2px solid #d4a5ff;
+  padding-bottom: 10px;
 }
 
 /* List Styles */
 ul {
-list-style: none;
-padding: 0;
-text-align: left;
+  list-style: none;
+  padding: 0;
 }
 
 li {
-font-size: 1.2em;
-padding: 10px;
-transition: 0.3s;
-border-bottom: 1px solid #FFFF00;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: 0.3s;
 }
 
 li:hover {
-color: #FFFF00;
+  color: #d4a5ff;
 }
 
 /* Projects */
 .project {
-background: rgba(255, 255, 255, 0.9);
-padding: 20px;
-margin: 20px 0;
-border-radius: 8px;
-transition: 0.3s;
-text-align: left;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .project:hover {
-background: rgba(255, 255, 0, 0.5);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .project a {
-color: #FFFF00;
-font-size: 1.5em;
-font-weight: bold;
-text-decoration: none;
+  color: #d4a5ff;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 
 .project a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
-background: #4682B4;
-padding: 20px;
-position: relative;
-bottom: 0;
-width: 100%;
-font-size: 1.1em;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
-color: #FFFF00;
-text-decoration: none;
-font-weight: bold;
+  color: #d4a5ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
-
