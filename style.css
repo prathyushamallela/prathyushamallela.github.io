@@ -6,9 +6,11 @@ body {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   text-align: center;
-  background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+  background-image: url('https://www.transparenttextures.com/patterns/transparent-square-tiles.png');
 }
-
+/*background-color: #194213;*/
+/*background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 /* Header */
 header {
   background: rgba(0, 0, 0, 0.7);
