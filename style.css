@@ -1,43 +1,42 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
-  color: #fff;
+  background: linear-gradient(to right, #004d40, #00796b);
+  color: #e0f2f1;
   text-align: center;
-  background-image: url('https://github.com/prathyushamallela/prathyushamallela.github.io/blob/main/green_background.jpg');
+  background-image: url('https://www.transparenttextures.com/patterns/green-dust-and-scratches.png');
+  background-blend-mode: overlay;
 }
-/*background-color: #194213;*/
-/*background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 /* Header */
 header {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 77, 64, 0.8);
   padding: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #d4a5ff;
+  color: #80cbc4;
 }
 
 /* Sections */
 section {
   margin: 50px auto;
-  max-width: 800px;
-  padding: 20px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(0, 51, 43, 0.85);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  color: #d4a5ff;
+  color: #4db6ac;
   font-size: 2em;
-  border-bottom: 2px solid #d4a5ff;
+  border-bottom: 3px solid #4db6ac;
   padding-bottom: 10px;
 }
 
@@ -49,31 +48,32 @@ ul {
 
 li {
   font-size: 1.2em;
-  padding: 10px;
+  padding: 12px;
   transition: 0.3s;
 }
 
 li:hover {
-  color: #d4a5ff;
+  color: #80cbc4;
 }
 
 /* Projects */
 .project {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
   margin: 20px 0;
   border-radius: 8px;
   transition: 0.3s;
 }
 
 .project:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .project a {
-  color: #d4a5ff;
+  color: #4db6ac;
   font-size: 1.3em;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .project a:hover {
@@ -82,7 +82,7 @@ li:hover {
 
 /* Footer */
 footer {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 77, 64, 0.8);
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -90,11 +90,31 @@ footer {
 }
 
 footer a {
-  color: #d4a5ff;
+  color: #80cbc4;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  li {
+    font-size: 1.1em;
+  }
 }
