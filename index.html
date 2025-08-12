@@ -6,21 +6,30 @@
   <title>Portfolio | Prathyusha Mallela</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Minimal inline styles for the new nav + section switching; keep your style.css as primary */
-    body { margin: 0; }
-    header { padding: 2rem 1rem 1rem; }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f9fdf9; color: #1a3d2f; }
+    header { padding: 2rem 1rem 1rem; background-color: #2f6f4f; color: white; text-align: center; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { max-width: 700px; margin: 0.5rem auto 0; font-size: 1.1rem; }
     nav {
       position: sticky; top: 0; z-index: 10;
-      display: flex; gap: 1rem; align-items: center;
-      padding: .75rem 1rem; border-top: 1px solid #eee; border-bottom: 1px solid #eee;
-      background: #fff;
+      display: flex; gap: 1rem; align-items: center; justify-content: center;
+      padding: 0.75rem 1rem; border-top: 1px solid #cce3d4; border-bottom: 1px solid #cce3d4;
+      background: #e6f4ec;
     }
-    nav a { text-decoration: none; padding: .5rem .75rem; border-radius: 8px; color: inherit; }
-    nav a.active { background: #f2f2f2; }
-    main { padding: 1rem; }
+    nav a { text-decoration: none; padding: 0.5rem 0.75rem; border-radius: 6px; color: #1a3d2f; font-weight: bold; transition: background 0.3s; }
+    nav a:hover { background-color: #c2e0d0; }
+    nav a.active { background: #2f6f4f; color: white; }
+    main { padding: 1rem; max-width: 900px; margin: auto; }
     section[hidden] { display: none !important; }
-    .pdf-frame { width: 100%; height: 800px; border: none; }
-    .helper { color: #666; font-size: .9rem; }
+    h2, h3, h4 { color: #2f6f4f; }
+    a { color: #2f6f4f; }
+    a:hover { text-decoration: underline; }
+    ul { line-height: 1.6; }
+    .project { border: 1px solid #cce3d4; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; background-color: #fff; }
+    .pdf-frame { width: 100%; height: 800px; border: none; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .helper { color: #4f6f5a; font-size: 0.9rem; }
+    footer { background-color: #2f6f4f; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    footer a { color: #d4f0e1; }
   </style>
 </head>
 <body>
@@ -31,7 +40,6 @@
     </p>
   </header>
 
-  <!-- Top navigation -->
   <nav aria-label="Primary">
     <a href="#about" data-route>About</a>
     <a href="#research-presentation" data-route>Research Presentation</a>
@@ -39,7 +47,6 @@
   </nav>
 
   <main>
-    <!-- About (existing content kept) -->
     <section id="about" data-page>
       <h2>About Me</h2>
       <p>
@@ -86,16 +93,9 @@
         <div id="medium-articles" aria-live="polite">
           <p>Loading latest posts…</p>
         </div>
-        <noscript>
-          <p>
-            JavaScript is required to load my latest Medium posts automatically. You can view them directly on
-            <a href="https://medium.com/@prathyusha-mallela" target="_blank" rel="noopener">my Medium profile</a>.
-          </p>
-        </noscript>
       </section>
     </section>
 
-    <!-- Research Presentation (Poster page) -->
     <section id="research-presentation" data-page hidden>
       <h2>Research Presentation</h2>
       <article class="poster">
@@ -113,7 +113,6 @@
       </article>
     </section>
 
-    <!-- CV page -->
     <section id="cv" data-page hidden>
       <h2>Curriculum Vitae</h2>
       <p class="helper">Embedded preview and download link below.</p>
@@ -135,11 +134,9 @@
   </footer>
 
   <script>
-    // Simple hash-based router to simulate separate pages
     (function() {
       const links = Array.from(document.querySelectorAll('nav a[data-route]'));
       const pages = Array.from(document.querySelectorAll('section[data-page]'));
-
       function setActive(hash) {
         const id = (hash || '#about').replace('#','');
         pages.forEach(sec => sec.hidden = sec.id !== id);
@@ -147,41 +144,6 @@
       }
       window.addEventListener('hashchange', () => setActive(location.hash));
       setActive(location.hash);
-
-      // Medium RSS loader (no iframes; bypasses X-Frame-Options)
-      const container = document.getElementById('medium-articles');
-      if (container) {
-        const feedURL = 'https://medium.com/feed/@prathyusha-mallela';
-        const api = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedURL);
-        fetch(api)
-          .then(r => r.json())
-          .then(data => {
-            if (!data || !data.items) throw new Error('No items');
-            const posts = data.items.filter(i => i.categories && i.categories.length).slice(0, 6);
-            if (!posts.length) throw new Error('Empty');
-            container.innerHTML = posts.map(post => {
-              const pub = new Date(post.pubDate);
-              const d = pub.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-              const tmp = document.createElement('div');
-              tmp.innerHTML = post.description || post.content || '';
-              const text = (tmp.textContent || '').replace(/\s+/g, ' ').trim();
-              const excerpt = text.length > 180 ? text.slice(0, 177) + '…' : text;
-              const thumb = post.thumbnail || (post.enclosure && post.enclosure.link) || '';
-              return `
-                <article class="medium-card" style="display:grid;grid-template-columns:160px 1fr;gap:1rem;align-items:start;padding:1rem;border:1px solid #eee;border-radius:12px;margin-bottom:1rem;">
-                  ${thumb ? `<img src="${thumb}" alt="" loading="lazy" style="width:160px;height:100px;object-fit:cover;border-radius:8px;"/>` : ''}
-                  <div>
-                    <h4 style="margin:.1rem 0 .25rem; font-size:1.05rem;"><a href="${post.link}" target="_blank" rel="noopener">${post.title}</a></h4>
-                    <p style="color:#666;font-size:.875rem;margin:.1rem 0 .5rem;">${d}</p>
-                    <p style="margin:0;">${excerpt}</p>
-                  </div>
-                </article>`;
-            }).join('');
-          })
-          .catch(() => {
-            container.innerHTML = 'Couldn\'t load posts automatically. View them on <a href="https://medium.com/@prathyusha-mallela" target="_blank" rel="noopener">my Medium profile</a>.';
-          });
-      }
     })();
   </script>
 </body>
