@@ -92,9 +92,9 @@
 
       <section id="articles">
         <h3>My Medium Articles</h3>
-        <div id="medium-articles" aria-live="polite">
-          <p>Loading latest posts…</p>
-        </div>
+        <p>I regularly post AI-related articles on Medium under the username <strong>@prathyusha-mallela</strong>. You can read them here: 
+          <a href="https://medium.com/@prathyusha-mallela" target="_blank" rel="noopener">Visit My Medium Profile</a>
+        </p>
       </section>
     </section>
 
@@ -146,31 +146,6 @@
       }
       window.addEventListener('hashchange', () => setActive(location.hash));
       setActive(location.hash);
-
-      // Medium feed loader
-      const container = document.getElementById('medium-articles');
-      if (container) {
-        const feedURL = 'https://medium.com/feed/@prathyusha-mallela';
-        const api = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedURL);
-        fetch(api)
-          .then(r => r.json())
-          .then(data => {
-            if (!data || !data.items) throw new Error('No items');
-            const posts = data.items.filter(i => i.categories && i.categories.length).slice(0, 5);
-            container.innerHTML = posts.map(post => {
-              const pub = new Date(post.pubDate);
-              const d = pub.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-              return `<article style="margin-bottom:1rem;padding:1rem;border:1px solid #b5d1b8;border-radius:8px;background:white;">
-                        <h4><a href="${post.link}" target="_blank" rel="noopener">${post.title}</a></h4>
-                        <p style="color:#666;font-size:0.9rem;">${d}</p>
-                        <p>${post.description.replace(/<[^>]+>/g, '').slice(0,150)}...</p>
-                      </article>`;
-            }).join('');
-          })
-          .catch(() => {
-            container.innerHTML = '<p>Could not load posts. View them on <a href="https://medium.com/@prathyusha-mallela" target="_blank">Medium</a>.</p>';
-          });
-      }
     })();
   </script>
 </body>
