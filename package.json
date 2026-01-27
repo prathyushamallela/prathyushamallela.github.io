@@ -1,9 +1,9 @@
 {
-  "name": "prathyusha-resumebuilder-reactapp",
+  "name": "prathyushamallela.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prathyushamallela.github.io/prathyusha-resumebuilder-reactapp/",
+  "homepage": "https://prathyushamallela.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

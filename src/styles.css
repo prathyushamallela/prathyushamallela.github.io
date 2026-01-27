@@ -481,4 +481,34 @@ strong {
 }
 
 
+.pdf-container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Watermark overlay */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 4rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+
 
