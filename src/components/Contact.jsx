@@ -23,7 +23,7 @@ export default function Contact() {
         {/* Contact information */}
         <div>
           <p>
-            <strong>Email (Professional):</strong>{" "}
+            <strong>Email (Personal):</strong>{" "}
             <a href="mailto:prathyushamallela3@gmail.com">
               prathyushamallela3@gmail.com
             </a>
@@ -33,6 +33,13 @@ export default function Contact() {
             <strong>Email (University):</strong>{" "}
             <a href="mailto:mallelap@oregonstate.edu">
               mallelap@oregonstate.edu
+            </a>
+          </p>
+
+          <p>
+            <strong>Email (Professional):</strong>{" "}
+            <a href="mailto:prmallela@dekaresearch.com">
+              prmallela@dekaresearch.com
             </a>
           </p>
 
