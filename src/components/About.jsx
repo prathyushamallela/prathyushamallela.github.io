@@ -5,8 +5,8 @@ export default function About() {
     <section id="about">
       <h2>All about me!</h2>
 
-      <p>
-  I bring over <strong>8 years of experience</strong> in backend and systems
+<p>
+  I bring close to <strong>9 years of experience</strong> in backend and systems
   development, with a professional journey spanning entrepreneurship,
   fintech, and applied artificial intelligence.
 </p>
@@ -47,11 +47,11 @@ export default function About() {
 </p>
 
 <p>
-  I am currently a <strong>Machine Learning Engineer</strong> at 
-  <strong> Deka Research and Development</strong> in Manchester, New Hampshire,
-  where I work on building reliable systems, developing intelligent models,
-  and solving complex, real-world problems at scale.
-</p>
+  During my time as a <strong>Machine Learning Engineer at DEKA Research and Development</strong> in Manchester, New Hampshire, 
+  I had the opportunity to leverage my expertise in <strong>backend development and machine learning engineering</strong> to build reliable,
+   intelligent systems and develop scalable solutions to complex, real-world challenges.
+  </p>
+
 
 
 <p>

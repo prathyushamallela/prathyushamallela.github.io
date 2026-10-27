@@ -7,14 +7,25 @@ export default function Header() {
       <div className="header-top">
         <h1>Prathyusha Mallela</h1>
 
+        <p className="location">
+          📍 Sunnyvale, California
+        </p>
+
+        <h2 className="vision">
+          <strong>I love ethics! My vision is to make AI ethical.</strong>
+        </h2>
+
         <div className="contact-inline">
-          <a href="tel:+19718954741">(971) 895-4741</a>
+          <a href="tel:+19718954741">
+            (971) 895-4741
+          </a>
           <span>•</span>
 
           <a href="mailto:prathyushamallela3@gmail.com">
             prathyushamallela3@gmail.com
           </a>
           <span>•</span>
+
           <a
             href="https://www.linkedin.com/in/prathyusha-mallela/"
             target="_blank"
@@ -23,6 +34,7 @@ export default function Header() {
             LinkedIn
           </a>
           <span>•</span>
+
           <a
             href="https://github.com/PrathyushaMallela"
             target="_blank"
@@ -33,8 +45,11 @@ export default function Header() {
         </div>
       </div>
 
-      <p>Machine Learning Engineer | IoT Certified | Backend Developer | Causal Inferencing and Probabilistic Graphical Models</p>
-
+      <p className="professional-summary">
+        Machine Learning Engineer | IoT Certified |
+        Backend Developer | Causal Inference and
+        Probabilistic Graphical Models
+      </p>
 
       <nav>
         <Link to="/">Home</Link>
@@ -45,7 +60,6 @@ export default function Header() {
         <Link to="/pg-certificate">PG Certificate</Link>
         <Link to="/research-notes">Research Notes</Link>
         <Link to="/hobbies">Hobbies and Me</Link>
-        
       </nav>
     </header>
   );

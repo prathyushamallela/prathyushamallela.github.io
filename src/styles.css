@@ -510,5 +510,55 @@ strong {
   white-space: nowrap;
 }
 
+/* =========================
+   HEADER LOCATION
+========================= */
 
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  width: fit-content;
+  max-width: 100%;
+
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--cyan);
+
+  margin: 8px 0 16px;
+  padding: 6px 14px;
+
+  background: var(--cyan-soft);
+  border: 1px solid rgba(77, 208, 225, 0.35);
+  border-radius: 20px;
+}
+
+/* =========================
+   HEADER VISION
+========================= */
+
+header .vision {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 12px 0 18px;
+  color: var(--text-primary);
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+  header .location {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  header .vision {
+    font-size: 16px;
+  }
+}
 
