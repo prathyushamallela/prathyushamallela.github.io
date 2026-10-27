@@ -99,8 +99,8 @@ export const projects = [
   },
   {
     name: "Bee Pollination & Particle Filter Simulation",
-    url: "https://github.com/prathyushamallela/beePollicationPFA/beePollinationPFA",
-    image: "https://github.com/prathyushamallela/beePollinationPFA/bee_particle_filter.gif",
+    url: "https://github.com/prathyushamallela/beePollicationPFA/tree/main/beePollinationPFA",
+    image: "https://github.com/prathyushamallela/beePollicationPFA/tree/main/beePollinationPFAbee_particle_filter.gif",
     description:
       "A Python simulation of bee movement, wind-driven pollen dispersion, and Bayesian particle filtering for probabilistic localization.",
     technologies: [
